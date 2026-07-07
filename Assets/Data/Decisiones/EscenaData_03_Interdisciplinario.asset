@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0647831e615f8ab4b92576adb083fac2, type: 3}
+  m_Name: EscenaData_03_Interdisciplinario
+  m_EditorClassIdentifier: Assembly-CSharp::EscenaDecisionData
+  idEscena: escena3_interdisciplinario
+  textoContexto: "La sala de espera se llena y una enfermera te avisa que un paciente
+    que espera hace rato empeor\xF3. \xBFQu\xE9 hac\xE9s?"
+  opciones:
+  - nombreCorto: A - Pedir apoyo al equipo
+    colorCubo: {r: 0.627451, g: 0.1254902, b: 0.9411765, a: 1}
+    textoFeedback: "La comunicaci\xF3n y el trabajo coordinado permiten identificar
+      r\xE1pido a qui\xE9n priorizar y optimizar recursos en alta demanda."
+    esOpcionEsperada: 1
+  - nombreCorto: B - Seguir el orden
+    colorCubo: {r: 1, g: 0.6470588, b: 0, a: 1}
+    textoFeedback: "Respetar el orden importa, pero las prioridades cambian cuando
+      un paciente empeora. La evaluaci\xF3n continua es parte del trabajo diario."
+    esOpcionEsperada: 0
+  - nombreCorto: C - Pedirle que espere
+    colorCubo: {r: 0.9803922, g: 0.5019608, b: 0.4470589, a: 1}
+    textoFeedback: "Compartir informaci\xF3n con el equipo permite responder m\xE1s
+      r\xE1pido ante casos que se agravan. La comunicaci\xF3n efectiva es clave en
+      contextos complejos."
+    esOpcionEsperada: 0

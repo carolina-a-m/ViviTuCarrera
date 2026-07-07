@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0647831e615f8ab4b92576adb083fac2, type: 3}
+  m_Name: EscenaData_02_Consulta
+  m_EditorClassIdentifier: Assembly-CSharp::EscenaDecisionData
+  idEscena: escena2_consulta
+  textoContexto: "Comenz\xE1s la consulta con el paciente elegido. \xBFC\xF3mo continu\xE1s?"
+  opciones:
+  - nombreCorto: A - Escuchar y preguntar
+    colorCubo: {r: 0.89203954, g: 0.9622642, b: 0.5283374, a: 0}
+    textoFeedback: "La entrevista cl\xEDnica es clave para orientar el diagn\xF3stico.
+      Escuchar y preguntar antes de actuar es tan importante como el conocimiento
+      t\xE9cnico."
+    esOpcionEsperada: 1
+  - nombreCorto: B - Pedir estudios ya
+    colorCubo: {r: 0.7803922, g: 0.08235294, b: 0.5215687, a: 1}
+    textoFeedback: "Los estudios complementan la consulta, pero suelen pedirse despu\xE9s
+      de la entrevista inicial. Conocer antecedentes ayuda a decidir mejor."
+    esOpcionEsperada: 0
+  - nombreCorto: "C - Indicaci\xF3n r\xE1pida"
+    colorCubo: {r: 0.5960785, g: 0.9843138, b: 0.5960785, a: 1}
+    textoFeedback: ' Cada paciente tiene necesidades particulares. Decidir sin evaluar
+      primero puede llevar a conclusiones apresuradas.'
+    esOpcionEsperada: 0

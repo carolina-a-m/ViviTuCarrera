@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0647831e615f8ab4b92576adb083fac2, type: 3}
+  m_Name: EscenaData_01_Triage
+  m_EditorClassIdentifier: Assembly-CSharp::EscenaDecisionData
+  idEscena: escena1_triage
+  textoContexto: "Ingres\xE1s a la guardia. Tres pacientes esperan: un ni\xF1o con
+    fiebre alta, un adulto con dolor intenso en el pecho, y una persona con un corte
+    superficial en la mano. \xBFA qui\xE9n atend\xE9s primero?"
+  opciones:
+  - nombreCorto: Adulto - dolor de pecho
+    colorCubo: {r: 0.9245283, g: 0.53552866, b: 0.7203339, a: 0}
+    textoFeedback: "En una guardia se prioriza por gravedad, no por orden de llegada.
+      Un dolor tor\xE1cico puede ser una urgencia con riesgo vital inmediato."
+    esOpcionEsperada: 1
+  - nombreCorto: "Ni\xF1o con fiebre"
+    colorCubo: {r: 0.5224136, g: 0.8510027, b: 0.90188676, a: 0}
+    textoFeedback: "La fiebre en pediatr\xEDa merece atenci\xF3n, pero no siempre
+      es la m\xE1s urgente. Un dolor de pecho puede indicar un riesgo vital que requiere
+      prioridad."
+    esOpcionEsperada: 0
+  - nombreCorto: Corte en la mano
+    colorCubo: {r: 0.9169811, g: 0.72706974, b: 0.441189, a: 0}
+    textoFeedback: "Toda consulta merece atenci\xF3n, pero en emergencias se prioriza
+      seg\xFAn riesgo inmediato. Hab\xEDa casos que requer\xEDan evaluaci\xF3n m\xE1s
+      urgente."
+    esOpcionEsperada: 0
