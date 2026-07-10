@@ -5,16 +5,29 @@ public class SelectorClick : MonoBehaviour
 {
     void Update()
     {
+        Vector2 posicionInput = Vector2.zero;
+        bool hayInput = false;
+
         if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
-            if (Physics.Raycast(ray, out RaycastHit hit) && hit.collider.gameObject == gameObject)
+            posicionInput = Mouse.current.position.ReadValue();
+            hayInput = true;
+        }
+        else if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
+        {
+            posicionInput = Touchscreen.current.primaryTouch.position.ReadValue();
+            hayInput = true;
+        }
+
+        if (!hayInput) return;
+
+        Ray ray = Camera.main.ScreenPointToRay(posicionInput);
+        if (Physics.Raycast(ray, out RaycastHit hit) && hit.collider.gameObject == gameObject)
+        {
+            OpcionCubo cubo = GetComponent<OpcionCubo>();
+            if (cubo != null)
             {
-                OpcionCubo cubo = GetComponent<OpcionCubo>();
-                if (cubo != null)
-                {
-                    GameManager.Instancia.ElegirOpcion(cubo.indiceOpcion);
-                }
+                GameManager.Instancia.ElegirOpcion(cubo.indiceOpcion);
             }
         }
     }
