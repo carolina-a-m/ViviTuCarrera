@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0647831e615f8ab4b92576adb083fac2, type: 3}
   m_Name: EscenaData_04_CierreFeedback
   m_EditorClassIdentifier: Assembly-CSharp::EscenaDecisionData
-  idEscena: 
-  textoContexto: 
+  idEscena: cierre_feedback
+  textoContexto: "Durante esta experiencia atravesaste algunas de las situaciones
+    que pueden presentarse en el ejercicio cotidiano de la medicina. [Ac\xE1 va la
+    devoluci\xF3n personalizada seg\xFAn tus elecciones \u2014 placeholder por ahora]"
   opciones: []

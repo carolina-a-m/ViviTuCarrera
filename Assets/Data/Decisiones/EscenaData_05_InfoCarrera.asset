@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0647831e615f8ab4b92576adb083fac2, type: 3}
   m_Name: EscenaData_05_InfoCarrera
   m_EditorClassIdentifier: Assembly-CSharp::EscenaDecisionData
-  idEscena: 
-  textoContexto: 
+  idEscena: info_carrera
+  textoContexto: "Medicina - Universidad Nacional de Rosario. Duraci\xF3n del plan
+    de estudios, organizaci\xF3n de la carrera, principales \xE1reas de formaci\xF3n
+    y \xE1mbitos laborales. [Placeholder: ac\xE1 va el link/info institucional real]"
   opciones: []

@@ -40,12 +40,9 @@ public class AjustadorCamara : MonoBehaviour
         if (aspecto < 1f)
         {
             float fovVerticalNecesario = 2f * Mathf.Atan(Mathf.Tan(fovHorizontalDeseado * Mathf.Deg2Rad / 2f) / aspecto) * Mathf.Rad2Deg;
+            fovVerticalNecesario = Mathf.Clamp(fovVerticalNecesario, 60f, 90f);
             camara.fieldOfView = fovVerticalNecesario;
             Debug.Log($"FOV ajustado a: {fovVerticalNecesario}");
-        }
-        else
-        {
-            Debug.Log("Aspecto >= 1, no se ajusta");
         }
     }
 }

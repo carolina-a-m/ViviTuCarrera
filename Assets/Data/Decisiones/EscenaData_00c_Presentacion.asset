@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0647831e615f8ab4b92576adb083fac2, type: 3}
   m_Name: EscenaData_00c_Presentacion
   m_EditorClassIdentifier: Assembly-CSharp::EscenaDecisionData
-  idEscena: 
-  textoContexto: 
+  idEscena: presentacion_escenario
+  textoContexto: "\xA1Bienvenido! Hoy comenz\xE1s tu primer d\xEDa como m\xE9dico.
+    Vas a enfrentar situaciones habituales de la pr\xE1ctica profesional. No existen
+    respuestas perfectas: el objetivo es conocer el trabajo cotidiano de un m\xE9dico
+    y descubrir si te resulta af\xEDn."
   opciones: []

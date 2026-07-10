@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0647831e615f8ab4b92576adb083fac2, type: 3}
   m_Name: EscenaData_00b_Introduccion
   m_EditorClassIdentifier: Assembly-CSharp::EscenaDecisionData
-  idEscena: 
-  textoContexto: 
+  idEscena: introduccion
+  textoContexto: "La medicina es una profesi\xF3n orientada a la prevenci\xF3n, diagn\xF3stico
+    y acompa\xF1amiento de las personas. Los m\xE9dicos trabajan en hospitales, centros
+    de salud y guardias, junto a otros profesionales. En esta experiencia asumir\xE1s
+    el rol de un m\xE9dico en su primer d\xEDa en un hospital p\xFAblico argentino."
   opciones: []
