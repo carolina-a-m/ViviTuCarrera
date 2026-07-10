@@ -1,6 +1,7 @@
 using UnityEngine;
-using TMPro;
 using System.Collections;
+using TMPro;
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instancia { get; private set; }
@@ -10,8 +11,10 @@ public class GameManager : MonoBehaviour
 
     [Header("UI")]
     public TMP_Text textoContexto;
+    public GameObject botonContinuar;
 
     private int indiceActual = -1;
+    private bool esperandoAvance = false;
 
     void Awake()
     {
@@ -45,6 +48,17 @@ public class GameManager : MonoBehaviour
         {
             textoContexto.text = escenaActual.textoContexto;
         }
+
+        bool esBloqueDeSoloTexto = escenaActual.opciones == null || escenaActual.opciones.Length == 0;
+        if (botonContinuar != null)
+        {
+            botonContinuar.SetActive(esBloqueDeSoloTexto);
+        }
+    }
+
+    public void ContinuarSinDecision()
+    {
+        AvanzarEscena();
     }
 
     public EscenaDecisionData ObtenerEscenaActual()
@@ -52,7 +66,6 @@ public class GameManager : MonoBehaviour
         if (indiceActual < 0 || indiceActual >= escenas.Length) return null;
         return escenas[indiceActual];
     }
-    private bool esperandoAvance = false;
 
     public void ElegirOpcion(int indiceOpcion)
     {
