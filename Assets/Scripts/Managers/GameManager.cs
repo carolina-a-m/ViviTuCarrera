@@ -55,13 +55,11 @@ public class GameManager : MonoBehaviour
             botonContinuar.SetActive(esBloqueDeSoloTexto);
         }
     }
-    
-        public void ContinuarSinDecision()
+
+    public void ContinuarSinDecision()
     {
-        Debug.Log("¡ContinuarSinDecision fue llamado!");
         AvanzarEscena();
     }
-
 
     public EscenaDecisionData ObtenerEscenaActual()
     {
