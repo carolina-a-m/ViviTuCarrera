@@ -1143,7 +1143,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1102685455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63ac830cdb44edb409bfbca2e36238eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 1aa5d5a55a0c7c544b45e34ee308adfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectorClick
 --- !u!1 &1368306998
@@ -1577,7 +1577,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1414869655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63ac830cdb44edb409bfbca2e36238eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 1aa5d5a55a0c7c544b45e34ee308adfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectorClick
 --- !u!1 &1506972107
@@ -2135,7 +2135,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1519930155}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63ac830cdb44edb409bfbca2e36238eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 1aa5d5a55a0c7c544b45e34ee308adfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectorClick
 --- !u!1 &1531756168
