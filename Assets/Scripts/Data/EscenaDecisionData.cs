@@ -10,6 +10,9 @@ public class EscenaDecisionData : ScriptableObject
     [TextArea(3, 6)]
     public string textoContexto;
 
+    [Header("Escenario (prefabs a instanciar en esta escena)")]
+    public GameObject[] prefabsEscenario;
+
     [Header("Opciones")]
     public OpcionDecision[] opciones;
 }

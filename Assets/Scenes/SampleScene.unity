@@ -2344,6 +2344,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 759d54dd65ad2904cab2d3138068687f, type: 2}
   textoContexto: {fileID: 1368307000}
   botonContinuar: {fileID: 1593710688}
+  objetosDecision:
+  - {fileID: 1519930155}
+  - {fileID: 1414869655}
+  - {fileID: 1102685455}
 --- !u!4 &1653675382
 Transform:
   m_ObjectHideFlags: 0
