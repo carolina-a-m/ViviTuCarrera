@@ -17,6 +17,11 @@ public class GameManager : MonoBehaviour
     [Header("Puntos de spawn para los prefabs de cada escena")]
     public Transform[] puntosSpawn;
 
+    [Header("Hospital (escenario visual, no afecta mecánica)")]
+    public GameObject hospitalFinal;
+    public int indiceInicioHospital = 3;
+    public int indiceFinHospital = 3;
+
     private int indiceActual = -1;
     private bool esperandoAvance = false;
     private List<GameObject> objetosInstanciados = new List<GameObject>();
@@ -33,6 +38,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        if (hospitalFinal != null) hospitalFinal.SetActive(false);
         AvanzarEscena();
     }
 
@@ -45,7 +51,14 @@ public class GameManager : MonoBehaviour
         if (indiceActual >= escenas.Length)
         {
             Debug.Log("Recorrido terminado. Acá va el cierre / feedback final.");
+            if (hospitalFinal != null) hospitalFinal.SetActive(false);
             return;
+        }
+
+        if (hospitalFinal != null)
+        {
+            bool debeEstarActivo = indiceActual >= indiceInicioHospital && indiceActual <= indiceFinHospital;
+            hospitalFinal.SetActive(debeEstarActivo);
         }
 
         EscenaDecisionData escenaActual = escenas[indiceActual];
@@ -60,6 +73,15 @@ public class GameManager : MonoBehaviour
         if (botonContinuar != null)
         {
             botonContinuar.SetActive(esBloqueDeSoloTexto);
+
+            if (esBloqueDeSoloTexto)
+            {
+                TMP_Text textoBoton = botonContinuar.GetComponentInChildren<TMP_Text>();
+                if (textoBoton != null)
+                {
+                    textoBoton.text = escenaActual.textoBotonContinuar;
+                }
+            }
         }
 
         InstanciarEscenario(escenaActual);

@@ -12,7 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0647831e615f8ab4b92576adb083fac2, type: 3}
   m_Name: EscenaData_00b_Practica
   m_EditorClassIdentifier: Assembly-CSharp::EscenaDecisionData
-  idEscena: 
-  textoContexto: 
-  mostrarCubos: 1
-  opciones: []
+  idEscena: practica_tutorial
+  textoContexto: "Tom\xE1 un cubo y colocalo en la zona iluminada."
+  prefabsEscenario:
+  - {fileID: 8305350791833547722, guid: 43a54082c76c1f246aacfa1d5024a76d, type: 3}
+  - {fileID: 800767207072928850, guid: dd2c1cdab5e40a24683ac785b746c199, type: 3}
+  - {fileID: 1152091343440687544, guid: 865e36f531668b64a90f7b846de927c7, type: 3}
+  opciones:
+  - nombreCorto: OpcionA
+    colorCubo: {r: 0.93962264, g: 0.27479517, b: 0.6274179, a: 0}
+    textoFeedback: "\xA1Perfecto! As\xED se interact\xFAa con los objetos en esta
+      experiencia."
+    esOpcionEsperada: 0
+  - nombreCorto: OpcionB
+    colorCubo: {r: 1, g: 0.6629858, b: 0.20943397, a: 1}
+    textoFeedback: "\xA1Perfecto! As\xED se interact\xFAa con los objetos en esta
+      experiencia."
+    esOpcionEsperada: 0
+  - nombreCorto: 
+    colorCubo: {r: 0.3338768, g: 0.7660377, b: 0.47933084, a: 0}
+    textoFeedback: "\xA1Perfecto! As\xED se interact\xFAa con los objetos en esta
+      experiencia."
+    esOpcionEsperada: 0

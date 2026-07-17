@@ -16,6 +16,10 @@ MonoBehaviour:
   textoContexto: "Ingres\xE1s a la guardia. Tres pacientes esperan: un ni\xF1o con
     fiebre alta, un adulto con dolor intenso en el pecho, y una persona con un corte
     superficial en la mano. \xBFA qui\xE9n atend\xE9s primero?"
+  prefabsEscenario:
+  - {fileID: 8305350791833547722, guid: 43a54082c76c1f246aacfa1d5024a76d, type: 3}
+  - {fileID: 800767207072928850, guid: dd2c1cdab5e40a24683ac785b746c199, type: 3}
+  - {fileID: 1152091343440687544, guid: 865e36f531668b64a90f7b846de927c7, type: 3}
   opciones:
   - nombreCorto: Adulto - dolor de pecho
     colorCubo: {r: 0.9245283, g: 0.53552866, b: 0.7203339, a: 0}

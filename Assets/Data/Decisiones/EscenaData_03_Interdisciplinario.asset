@@ -15,6 +15,10 @@ MonoBehaviour:
   idEscena: escena3_interdisciplinario
   textoContexto: "La sala de espera se llena y una enfermera te avisa que un paciente
     que espera hace rato empeor\xF3. \xBFQu\xE9 hac\xE9s?"
+  prefabsEscenario:
+  - {fileID: 8305350791833547722, guid: 43a54082c76c1f246aacfa1d5024a76d, type: 3}
+  - {fileID: 800767207072928850, guid: dd2c1cdab5e40a24683ac785b746c199, type: 3}
+  - {fileID: 1152091343440687544, guid: 865e36f531668b64a90f7b846de927c7, type: 3}
   opciones:
   - nombreCorto: A - Pedir apoyo al equipo
     colorCubo: {r: 0.627451, g: 0.1254902, b: 0.9411765, a: 1}

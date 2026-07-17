@@ -13,6 +13,9 @@ public class EscenaDecisionData : ScriptableObject
     [Header("Escenario (prefabs a instanciar en esta escena)")]
     public GameObject[] prefabsEscenario;
 
+    [Header("Botón Continuar (solo aplica a escenas sin opciones)")]
+    public string textoBotonContinuar = "Continuar";
+
     [Header("Opciones")]
     public OpcionDecision[] opciones;
 }

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: EscenaData_00_Bienvenida
   m_EditorClassIdentifier: Assembly-CSharp::EscenaDecisionData
   idEscena: bienvenida
-  textoContexto: "Bienvenido a \"Viv\xED tu Carrera\". Est\xE1s a punto de vivir
-    una simulaci\xF3n interactiva basada en situaciones reales del ejercicio profesional
-    de la medicina."
+  textoContexto: "Bienvenidx a Viv\xED tu Carrera, una experiencia interactiva para
+    conocer de cerca el ejercicio profesional de distintas carreras de la Universidad
+    Nacional de Rosario."
+  prefabsEscenario: []
   opciones: []
